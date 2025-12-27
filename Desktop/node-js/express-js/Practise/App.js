@@ -5,7 +5,12 @@ const app = express();
 
 app.get("/", (req, res, next) => {
     console.log(`this is from first middleware`, req.url, req.method);
-    res.send(`<center><p>welcome to the server</p></center>`);
+    res.send(`<center><p>welcome to the server</p>
+            <a href="/submit">go to form</a>
+        </center>
+
+       
+        `);
     next()
 })
 app.get("/submit", (req, res, next) => {
@@ -27,6 +32,10 @@ app.post("/submit", (req, res, next) => {
         <p>YOUR DETAILS ARE SUBMITTED SUCCESFULLY</p>
         </center>
 `)
+})
+
+app.get("/", (req, res, next) => {
+    res.send(`<p>hello</p>`)
 })
 
 
