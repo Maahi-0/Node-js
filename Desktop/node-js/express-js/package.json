@@ -5,7 +5,8 @@
   "main": "new.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon new.js"
+    "start": "nodemon new.js",
+    "tailwind": "npx tailwindcss -i ./public/css/input.css -o ./public/css/output.css --watch"
   },
   "author": "maahi",
   "license": "ISC",

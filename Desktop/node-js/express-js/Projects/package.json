@@ -4,14 +4,12 @@
   "description": "",
   "main": "App.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node App.js"
+    "tailwind": "npx tailwindcss -i ./public/css/input.css -o ./public/css/output.css --watch"
   },
   "author": "maahi",
   "license": "ISC",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.18",
-    "express": "^5.2.1",
-    "tailwindcss": "^4.1.18"
+    "ejs": "^3.1.10",
+    "express": "^5.2.1"
   }
 }
